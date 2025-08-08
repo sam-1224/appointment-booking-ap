@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:seed": "npx prisma db seed"
+    "db:seed": "npx prisma db seed",
+    "build": "npx tsc"
   },
   "prisma": {
     "seed": "ts-node --project tsconfig.seed.json prisma/seed.ts"
@@ -15,7 +16,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@prisma/client": "^4.16.13",
+    "@prisma/client": "^6.13.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -29,7 +30,7 @@
     "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "^20.4.5",
     "nodemon": "^3.0.1",
-    "prisma": "^4.16.13",
+    "prisma": "^6.13.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   }
